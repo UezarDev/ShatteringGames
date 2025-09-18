@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "./Button";
 import "./Navbar.css";
+import logo from "../assets/img/LogoLight.png";
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -32,7 +33,7 @@ const Navbar: React.FC = () => {
       <nav className="relative z-10 bg-white/1 border-b border-white/2">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="text-xl font-orbitron font-medium">ShatteringGames</div>
-          <img className="size-16" src="src/assets/img/LogoLight.png" alt="" />
+          <img className="size-16" src={logo} alt="" />
           <div className="flex items-center gap-4">
             <Button label="Home" onClick={() => {}} />
             <Button label="Games" onClick={() => {}} />

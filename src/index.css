@@ -30,3 +30,8 @@
   --font-orbitron: "Orbitron", sans-serif;
   --font-teko: "Teko", sans-serif;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
