@@ -1,0 +1,24 @@
+.navbar-wrapper {
+  position: fixed;
+  overflow: visible;
+}
+
+.navbar-backdrop {
+  position: absolute;
+  inset: 0;
+  /* make the backdrop taller so nearby content contributes to the blur */
+  height: 200%;
+  left: 0;
+  right: 0;
+  top: 0;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  /* mask the lower half so the effect fades away smoothly */
+  mask-image: linear-gradient(
+    to bottom,
+    black 0% 50%,
+    transparent 50% 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
